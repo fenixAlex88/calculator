@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">Калькулятор</h1>
+    <div class="calc">
+        <div class="calc__screen">
+            <p>0</p>
+        </div>
+        <div class="calc__buttons">
+            <div class="btn btn-grey ac" onclick="allClear()">ac</div>
+            <div class="btn btn-grey plus-minus" onclick="changeSign()">+/-</div>
+            <div class="btn btn-grey percent" onclick="getSign('%')">%</div>
+            <div class="btn btn-orange division" onclick="getSign('/')">/</div>
+
+            <div class="btn seven" onclick="getNumber('7')">7</div>
+            <div class="btn eight" onclick="getNumber('8')">8</div>
+            <div class="btn nine" onclick="getNumber('9')">9</div>
+            <div class="btn btn-orange multiply" onclick="getSign('X')">X</div>
+
+            <div class="btn four" onclick="getNumber('4')">4</div>
+            <div class="btn five" onclick="getNumber('5')">5</div>
+            <div class="btn six" onclick="getNumber('6')">6</div>
+            <div class="btn btn-orange minus" onclick="getSign('-')">-</div>
+
+            <div class="btn one" onclick="getNumber('1')">1</div>
+            <div class="btn two" onclick="getNumber('2')">2</div>
+            <div class="btn three" onclick="getNumber('3')">3</div>
+            <div class="btn btn-orange plus" onclick="getSign('+')">+</div>
+
+            <div class="btn zero" onclick="getNumber('0')">0</div>
+            <div class="btn point" onclick="getNumber('.')">.</div>
+            <div class="btn btn-orange equal" onclick="getResult()">=</div>
+        </div>
+    </div>
+
+<script src="calc.js"></script>
+</body>
+
+</html>
